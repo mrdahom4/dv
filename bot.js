@@ -28,7 +28,7 @@ client.on('ready', () => {
 
 
   client.on("message", message => {
-    if(message.content.startsWith("%verify")) {
+    if(message.content.startsWith("#verify")) {
       let num = Math.floor((Math.random() * 4783) + 10);
     
       message.channel.send(`يرجاء كتابة الرقم التالي: **${num}**`).then(m => {
